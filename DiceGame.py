@@ -140,7 +140,7 @@ class DiceGame:
         for user_no in range(self.number_of_users):
             user_name = self.USER_NAME.format(user_no=user_no + 1)
             players_list.append(user_name)
-        # shuffle(players_list)
+        shuffle(players_list)
         return players_list  # shuffling the user order
 
 
